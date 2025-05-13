@@ -16,8 +16,8 @@ This code needs the following pip modules installed:
 
 The code includes a couple of key items:
 
-* The log file is stored in /tmp directory; you can use this to make sure the daemon is executing correctly.
-* The actual DB is stored 
+* LOG_FILE: The log file is stored in this directory; currently the /tmp directory - which means it won't survive a reboot, but is good for debugging the daemon.
+* DB_FILE: The actual DB is stored in the location refered to with this variable. Make sure whatever user is executing this daemon (by systemd) has access to this location. 
 
 ## Running the daemon as a service
 

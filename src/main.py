@@ -1,4 +1,5 @@
-#!/home/archembaud/PythonEnvironments/aws-sve/bin/python
+
+#!/usr/bin/python
 import sqlite3
 from datetime import datetime
 import nvsmi
