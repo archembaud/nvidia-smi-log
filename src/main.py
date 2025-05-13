@@ -55,6 +55,7 @@ def add_user(USER):
     try:
         cursor.execute("INSERT INTO users (id, date_updated, total_hours, jan_hours, feb_hours, mar_hours, apr_hours, may_hours, jun_hours, jul_hours, aug_hours, sep_hours, oct_hours, nov_hours, dec_hours) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (USER, DATE, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0))
         connection.commit()
+        connection.close()
     except:
         connection.close()
 
